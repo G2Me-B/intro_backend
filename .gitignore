@@ -1,0 +1,182 @@
+# Standard .gitignore for a backend project (Python / Node / Java / Go / Ruby / Docker)
+# Adjust/remove sections for your specific stack.
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Logs ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Runtime / envs ===
+.env
+.env.*         # env.local, .env.production, etc.
+.envrc
+.env.local
+.env.test
+local.env
+*.pem
+*.key
+
+# Python virtualenvs and caches
+venv/
+ENV/
+.env/
+.venv/
+pip-wheel-metadata/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+.eggs/
+*.whl
+build/
+dist/
+pip-log.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.pytest_cache/*
+
+# Python tooling caches
+.mypy_cache/
+.pyrightcache/
+.ruff_cache/
+.pre-commit-cache/
+.cache/
+
+# Node
+node_modules/
+jspm_packages/
+.next/
+.nuxt/
+.svelte-kit/
+dist/
+build/
+.tmp/
+.cache/
+
+# Yarn & pnpm
+.pnp.*
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# Lockfiles (usually committed) - uncomment if you prefer to ignore
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Java / JVM
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+
+# Go
+bin/
+*.exe
+*.out
+
+# Ruby / Rails
+*.gem
+vendor/bundle/
+log/
+tmp/
+tmp/*
+*.rbc
+.byebug_history
+credentials.yml.enc
+coverage/
+spec/tmp/
+
+# PHP / Composer
+/vendor/
+composer.lock
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+
+# Docker
+*.tar
+docker-compose.override.yml
+.docker/
+docker-compose.*.yml
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.swp
+*~.nib
+*.swo
+
+# JetBrains
+out/
+*.iml
+.idea/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archives and binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Secrets and credentials
+secrets/*
+*.secret
+credentials.yml
+credentials.yml.enc
+
+# CI / Build outputs
+coverage/
+report/
+artifacts/
+build/
+dist/
+
+# Misc
+coverage.xml
+coverage-final.json
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+*.local
+!.gitkeep
